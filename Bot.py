@@ -17,6 +17,8 @@ def click(x,y):
 	time.sleep(0.05) #this pauses it for 1/100th of a second
 	win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
 
+#The section below is where you will fill in your specific mousePosition values from the displayMousePosition.py output(s)
+
 while keyboard.is_pressed('q') == False:
 	if pyautogui.pixel(560, 700)[0] == 0: #[0] is the index for R/red
 		click(560, 700)	
